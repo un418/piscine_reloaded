@@ -1,3 +1,3 @@
 #!/bin/sh
 
-ip a | grep ether | awk '{print $2}'
+ip addr | grep ether | awk '{print $2}'
