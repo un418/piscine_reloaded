@@ -6,13 +6,13 @@
 /*   By: adaferna <adaferna@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/08 20:43:49 by adaferna          #+#    #+#             */
-/*   Updated: 2026/04/08 22:10:32 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/04/09 18:31:44 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* 
-Create a function that displays the alphabet in lowercase, on a single line, by
-ascending order, starting from the letter ’a’.
+Create a function that displays all digits,
+on a single line, by ascending order.
 */
 
 void	ft_putchar(char c);
