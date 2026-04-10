@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/08 20:43:49 by adaferna          #+#    #+#             */
-/*   Updated: 2026/04/08 22:04:23 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/04/10 13:56:06 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,16 +22,16 @@ void	ft_print_alphabet(void)
 	char	c;
 
 	c = 'a';
-	while (c < 'z')
+	while (c <= 'z')
 	{
 		ft_putchar(c);
 		c++;
 	}
 }
 
-/*
+/* 
 int	main(void)
 {
 	ft_print_alphabet();
 }
-*/
+ */
