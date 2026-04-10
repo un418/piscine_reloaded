@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/10 12:04:37 by adaferna          #+#    #+#             */
-/*   Updated: 2026/04/10 14:34:39 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/04/10 14:58:07 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ Bubble sort is one of simplest:
 	ft_swap(argv[i],argv[i+1])
 
 */
+
+void	ft_putchar(char c);
 
 int	ft_strcmp(char *s1, char *s2)
 {
@@ -48,6 +50,7 @@ void	ft_swap(char **a, char **b)
 int	main(int argc, char *argv[])
 {
 	int	i;
+	int	j;
 
 	i = 1;
 	while (i < argc - 1)
@@ -58,6 +61,14 @@ int	main(int argc, char *argv[])
 			i = 1;
 			continue ;
 		}
+		i++;
+	}
+	i = 1;
+	while (i < argc)
+	{
+		j = 0;
+		while (argv[i][j])
+			ft_putchar(argv[i][j++]);
 		i++;
 	}
 	return (0);
