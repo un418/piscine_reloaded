@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/10 12:04:37 by adaferna          #+#    #+#             */
-/*   Updated: 2026/04/10 14:58:07 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/04/10 16:31:48 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,10 +47,18 @@ void	ft_swap(char **a, char **b)
 	*a = tmp;
 }
 
+void	ft_putstr(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i])
+		ft_putchar(str[i++]);
+}
+
 int	main(int argc, char *argv[])
 {
 	int	i;
-	int	j;
 
 	i = 1;
 	while (i < argc - 1)
@@ -66,9 +74,8 @@ int	main(int argc, char *argv[])
 	i = 1;
 	while (i < argc)
 	{
-		j = 0;
-		while (argv[i][j])
-			ft_putchar(argv[i][j++]);
+		ft_putstr(argv[i]);
+		ft_putchar('\n');
 		i++;
 	}
 	return (0);
