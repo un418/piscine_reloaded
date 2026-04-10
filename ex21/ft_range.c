@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/10 16:22:40 by adaferna          #+#    #+#             */
-/*   Updated: 2026/04/10 17:19:29 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/04/10 17:23:48 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,8 @@ int	*ft_range(int min, int max)
 	int	i_max;
 	int	*range;
 
+	if (min == max)
+		return (0);
 	i = 0;
 	i_max = ft_count_range(min, max);
 	range = malloc(i_max * sizeof(int));
